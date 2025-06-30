@@ -1,7 +1,10 @@
 resources:
-  - deployment.yaml
-  - service.yaml
+- deployment.yaml
+- service.yaml
 
 images:
-  - name: sidneckel/backend
-    newTag: latest
+- name: sidneckel/backend
+  newName: sidneckel/backend
+  newTag: 14f050fc7d075144de92e87d7dda4c9214e9586b
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
