@@ -4,7 +4,11 @@ const routes = require('./routes');
 
 const app = express();
 
-app.use(cors());
+// Configuração do CORS para permitir acesso só do frontend (IP + porta)
+app.use(cors({
+  origin: 'http://191.52.55.181:30002'  // endereço do frontend
+}));
+
 app.use(express.json());
 app.use(routes);
 
