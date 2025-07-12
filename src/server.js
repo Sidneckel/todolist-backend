@@ -6,7 +6,9 @@ const app = express();
 
 // Configuração do CORS para permitir acesso só do frontend (IP + porta)
 app.use(cors({
-  origin: 'http://191.52.55.181:30002'  // endereço do frontend
+  origin: 'http://191.52.55.181:30002', // frontend via NodePort
+  methods: ['GET', 'POST', 'PUT', 'DELETE'],
+  credentials: false
 }));
 
 app.use(express.json());
