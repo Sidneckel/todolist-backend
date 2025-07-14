@@ -5,6 +5,6 @@ resources:
 images:
 - name: sidneckel/backend
   newName: sidneckel/backend
-  newTag: 1ed7893819d6e5a15d13b8daedd36ecfbb814fc3
+  newTag: ea39c13720d201b29864b5745b99fd69a87c55e6
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
